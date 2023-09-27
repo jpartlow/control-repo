@@ -4,9 +4,9 @@ require 'json'
 require 'socket'
 
 #Get Hostname of puppetmaster
-compile_master = Socket.gethostname
+compile_master = Socket.gethostname
 environmentpath = ARGV[0]
-environment   = ARGV[1]
+environment = ARGV[1]
 
 #output the sha1 from the control-repo
 r10k_deploy_file_path = File.join(environmentpath, environment, '.r10k-deploy.json')
